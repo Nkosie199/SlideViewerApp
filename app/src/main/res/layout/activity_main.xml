@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    >
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        ></android.support.v4.view.ViewPager>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Introducing you to the University of Cape Town..."
+            android:id="@+id/heading"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignTop="@+id/view_pager"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Welcome to the official slide show preview of the University of Cape Town (UCT)."
+            android:id="@+id/textView3"
+            android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/heading"
+        android:layout_marginTop="35dp" />
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="We hope that after viewing this slide show you will be enriched with  an insight into UCT. The slide show provided highlights some the of key features of UCT which contribute to it&apos;s world class status."
+            android:id="@+id/textView4"
+            android:layout_gravity="center_horizontal"
+            android:layout_below="@+id/textView3"
+            android:layout_marginTop="31dp"
+            android:layout_alignRight="@+id/view_pager"
+            android:layout_alignEnd="@+id/view_pager" />
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Please press the button below to begin your journey into the UCT experience."
+            android:id="@+id/textView6"
+            android:layout_gravity="center_horizontal"
+            android:layout_below="@+id/textView4"
+            android:layout_marginTop="34dp" />
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start Slideshow"
+            android:onClick="beginSlideshow"
+            android:id="@+id/start"
+            android:layout_gravity="center_horizontal"
+            android:singleLine="true"
+            android:layout_below="@+id/textView6"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="66dp" />
+
+
+</RelativeLayout>
